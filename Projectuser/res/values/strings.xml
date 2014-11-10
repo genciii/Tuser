@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Projectuser</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kapi">Kapi</string>
+    <string name="title_activity_kamera">Kamera</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="title_activity_gorusme">Gorusme</string>
+    <string name="title_activity_on_kapi_kamera">OnKapiKamera</string>
+
+</resources>
