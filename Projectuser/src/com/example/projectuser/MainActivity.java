@@ -45,5 +45,10 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, Alarm.class);
 		startActivity(intent);
 	}
+	
+	public void openYardim(View view) {
+		Intent intent = new Intent(this, Yardim.class);
+		startActivity(intent);
+	}
 
 }

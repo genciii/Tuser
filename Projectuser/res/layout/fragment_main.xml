@@ -121,7 +121,8 @@
                         android:id="@+id/yardim"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/custom_buttonyard" />
+                        android:background="@drawable/custom_buttonyard"
+                        android:onClick="openYardim" />
 
                     <Button
                         android:id="@+id/log"

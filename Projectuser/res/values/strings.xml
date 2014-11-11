@@ -9,5 +9,6 @@
     <string name="title_activity_alarm">Alarm</string>
     <string name="title_activity_gorusme">Gorusme</string>
     <string name="title_activity_on_kapi_kamera">OnKapiKamera</string>
+    <string name="title_activity_yardim">Yardim</string>
 
 </resources>

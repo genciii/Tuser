@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/koyualt"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="YARDIM"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/cihaz_btn_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/custom_yardimbuttoncih"
+        android:gravity="left"
+        android:text="Cihaz Hakkında"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/alarm_btn_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/custom_yardimbuttoncih"
+        android:gravity="left"
+        android:text="Alarm Kurulumu"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/kamera_btn_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/custom_yardimbuttoncih"
+        android:gravity="left"
+        android:text="Kamera"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/gorusme_btn_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/custom_yardimbuttoncih"
+        android:gravity="left"
+        android:text="Görüşme"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

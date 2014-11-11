@@ -40,50 +40,61 @@ public final class R {
         public static final int custom_buttonlog=0x7f02000f;
         public static final int custom_buttonmedy=0x7f020010;
         public static final int custom_buttonyard=0x7f020011;
-        public static final int diger=0x7f020012;
-        public static final int dikbeyaz=0x7f020013;
-        public static final int geriok=0x7f020014;
-        public static final int gorusme=0x7f020015;
-        public static final int gorusme_hover=0x7f020016;
-        public static final int guvenlik=0x7f020017;
-        public static final int hava_durumu=0x7f020018;
-        public static final int ic_launcher=0x7f020019;
-        public static final int kamera=0x7f02001a;
-        public static final int kamera_hover=0x7f02001b;
-        public static final int kameralat=0x7f02001c;
-        public static final int kapi=0x7f02001d;
-        public static final int kapi_hover=0x7f02001e;
-        public static final int kisi=0x7f02001f;
-        public static final int log=0x7f020020;
-        public static final int log_hover=0x7f020021;
-        public static final int main_ust_bar=0x7f020022;
-        public static final int medya=0x7f020023;
-        public static final int medya_hover=0x7f020024;
-        public static final int mesaj=0x7f020025;
-        public static final int onkapi=0x7f020026;
-        public static final int otopark=0x7f020027;
-        public static final int siteparki=0x7f020028;
-        public static final int uygulamaarka=0x7f020029;
-        public static final int yardim=0x7f02002a;
-        public static final int yardim_hover=0x7f02002b;
-        public static final int zemin=0x7f02002c;
+        public static final int custom_yardimbuttoncih=0x7f020012;
+        public static final int diger=0x7f020013;
+        public static final int dikbeyaz=0x7f020014;
+        public static final int geriok=0x7f020015;
+        public static final int gorusme=0x7f020016;
+        public static final int gorusme_hover=0x7f020017;
+        public static final int guvenlik=0x7f020018;
+        public static final int hava_durumu=0x7f020019;
+        public static final int ic_launcher=0x7f02001a;
+        public static final int kamera=0x7f02001b;
+        public static final int kamera_hover=0x7f02001c;
+        public static final int kameralat=0x7f02001d;
+        public static final int kapi=0x7f02001e;
+        public static final int kapi_hover=0x7f02001f;
+        public static final int karsilamaekrani=0x7f020020;
+        public static final int kisi=0x7f020021;
+        public static final int koyualt=0x7f020022;
+        public static final int log=0x7f020023;
+        public static final int log_hover=0x7f020024;
+        public static final int main_ust_bar=0x7f020025;
+        public static final int medya=0x7f020026;
+        public static final int medya_hover=0x7f020027;
+        public static final int mesaj=0x7f020028;
+        public static final int onkapi=0x7f020029;
+        public static final int otopark=0x7f02002a;
+        public static final int siteparki=0x7f02002b;
+        public static final int uygulamaarka=0x7f02002c;
+        public static final int yardim=0x7f02002d;
+        public static final int yardim_hover=0x7f02002e;
+        public static final int zemin=0x7f02002f;
     }
     public static final class id {
         public static final int AnaLinear=0x7f08000c;
         public static final int acil=0x7f080012;
-        public static final int action_settings=0x7f080017;
+        public static final int action_settings=0x7f08001f;
         public static final int alarm=0x7f080008;
+        public static final int alarm_btn_id=0x7f08001c;
         public static final int ayarlar=0x7f080007;
+        public static final int cihaz_btn_id=0x7f08001b;
         public static final int container=0x7f080000;
+        public static final int detailFragment=0x7f080019;
+        public static final int detail_Fragment=0x7f080018;
         public static final int digitalClock1=0x7f080015;
+        public static final int display_yardim=0x7f08001a;
         public static final int geri=0x7f08000a;
         public static final int gorusme=0x7f080005;
+        public static final int gorusme_btn_id=0x7f08001e;
         public static final int kamera=0x7f080004;
+        public static final int kamera_btn_id=0x7f08001d;
         public static final int kapi=0x7f080003;
         public static final int linear1=0x7f080002;
         public static final int linear2=0x7f080006;
         public static final int linear3=0x7f08000f;
         public static final int linearLayout1=0x7f080001;
+        public static final int list_Fragment=0x7f080017;
         public static final int log=0x7f080011;
         public static final int medya=0x7f080009;
         public static final int onKapi=0x7f08000b;
@@ -101,12 +112,19 @@ public final class R {
         public static final int activity_kapi=0x7f030003;
         public static final int activity_main=0x7f030004;
         public static final int activity_on_kapi_kamera=0x7f030005;
-        public static final int fragment_alarm=0x7f030006;
-        public static final int fragment_gorusme=0x7f030007;
-        public static final int fragment_kamera=0x7f030008;
-        public static final int fragment_kapi=0x7f030009;
-        public static final int fragment_main=0x7f03000a;
-        public static final int fragment_on_kapi_kamera=0x7f03000b;
+        public static final int activity_yardim=0x7f030006;
+        public static final int fragment_alarm=0x7f030007;
+        public static final int fragment_gorusme=0x7f030008;
+        public static final int fragment_kamera=0x7f030009;
+        public static final int fragment_kapi=0x7f03000a;
+        public static final int fragment_main=0x7f03000b;
+        public static final int fragment_on_kapi_kamera=0x7f03000c;
+        public static final int fragment_splash_screen=0x7f03000d;
+        public static final int fragment_yardim=0x7f03000e;
+        public static final int yardim_activity_main=0x7f03000f;
+        public static final int yardim_detail_activity=0x7f030010;
+        public static final int yardim_detail_fragment=0x7f030011;
+        public static final int yardim_list_fragment=0x7f030012;
     }
     public static final class menu {
         public static final int alarm=0x7f070000;
@@ -115,6 +133,7 @@ public final class R {
         public static final int kapi=0x7f070003;
         public static final int main=0x7f070004;
         public static final int on_kapi_kamera=0x7f070005;
+        public static final int yardim=0x7f070006;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
@@ -125,6 +144,7 @@ public final class R {
         public static final int title_activity_kamera=0x7f050004;
         public static final int title_activity_kapi=0x7f050003;
         public static final int title_activity_on_kapi_kamera=0x7f050007;
+        public static final int title_activity_yardim=0x7f050008;
     }
     public static final class style {
         /** 
