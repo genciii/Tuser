@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cercevemenu"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="0sp" />
+
+    <LinearLayout
+        android:id="@+id/AnaLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/AnaLinear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/anaisim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="YENİ ALARM EKLE"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/contentTex23"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/beyaz"
+                android:gravity="center"
+                android:hint="Alarm Adı"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/contentText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:text="Alarm Tekrarı"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/contentText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Alarmınızın tekrarlanmasını istediğiniz günleri seçiniz"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/apzt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Pazartesi" />
+
+            <CheckBox
+                android:id="@+id/asli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Sali" />
+
+            <CheckBox
+                android:id="@+id/acrsmba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Carsamba" />
+
+            <CheckBox
+                android:id="@+id/aprsmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Persembe" />
+
+            <CheckBox
+                android:id="@+id/acma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Cuma" />
+
+            <CheckBox
+                android:id="@+id/acmrtsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Cumartesi" />
+
+            <CheckBox
+                android:id="@+id/apzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="Pazar" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/Kayitlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/kaydet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/kaydet" />
+
+            <Button
+                android:id="@+id/vazgec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@+id/kaydet"
+                android:background="@drawable/vazgec"
+                android:onClick="VazgecButton" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</RelativeLayout>

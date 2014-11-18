@@ -34,7 +34,7 @@ public class OnKapiKamera extends Activity {
 	
 	
 	public void onKapiAna(View view) {
-		Toast.makeText(this, "Bu ekran canli goruntu temsilidir", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "Bu ekran temsilidir", Toast.LENGTH_SHORT).show();
 		
 	}
 	

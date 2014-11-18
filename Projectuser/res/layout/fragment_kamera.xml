@@ -78,7 +78,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/linear2"
+        android:id="@+id/linear233"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"

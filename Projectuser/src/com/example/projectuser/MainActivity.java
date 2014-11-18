@@ -50,5 +50,10 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, Yardim.class);
 		startActivity(intent);
 	}
+	
+	public void openAyarlar(View view) {
+		Intent intent = new Intent(this, Ayarlar.class);
+		startActivity(intent);
+	}
 
 }

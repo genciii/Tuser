@@ -10,5 +10,55 @@
     <string name="title_activity_gorusme">Gorusme</string>
     <string name="title_activity_on_kapi_kamera">OnKapiKamera</string>
     <string name="title_activity_yardim">Yardim</string>
+    <string name="title_activity_ayarlar">Ayarlar</string>
+    <string name="title_activity_gorunum">Gorunum</string>
+    <string name="title_activity_ses">Ses</string>
+    <string name="title_activity_tarihvesaat">Tarihvesaat</string>
+    <string name="title_activity_tarih_ayar">TarihAyar</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="zaman_asimiprompt">5 sn</string>
+    <string name="yazi_tipiprompt">Times New Roman</string>
+    <string name="tema_renkprompt">Mavi</string>
+    <string name="zil_sesiprompt">Eagles-Hotel California</string>
+
+    <string-array name="zaman_asimi">
+        <item>5 sn</item>
+        <item>10 sn</item>
+        <item>20 sn</item>
+        <item>30 sn</item>
+        <item>1 dk </item>
+        <item>5 dk</item>
+        <item>10 dk</item>
+        <item>30 dk</item>
+    </string-array>
+    <string-array name="yazi_tipi">
+        <item>Times New Roman </item>
+        <item>Technical </item>
+        <item>Trebuchet MS </item>
+        <item>Tubular </item>
+        <item>Unicorn </item>
+        <item>Teletype </item>
+    </string-array>
+    <string-array name="tema_renk">
+        <item>Mavi </item>
+        <item>Kırmızı </item>
+        <item>Turuncu </item>
+        <item>Yeşil </item>
+        <item>Mor </item>
+        <item>Sarı </item>
+    </string-array>
+    <string-array name="zil_sesi">
+        <item>Eagles-Hotel California </item>
+        <item>Old phone ring </item>
+        <item>Samsung orginal</item>
+        <item>Classic </item>
+        <item>Nokia orginal </item>
+        <item>Marimba </item>
+    </string-array>
 
 </resources>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/uygulamaarka"
+    tools:context="com.example.projectuser.Kamera$PlaceholderFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="KAMERA"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/kapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onkapi"
+               />
+
+            <Button
+                android:id="@+id/kamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/otopark" />
+
+            <Button
+                android:id="@+id/gorusme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apartman" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ayarlar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/siteparki" />
+
+            <Button
+                android:id="@+id/alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/guvenlik" />
+
+            <Button
+                android:id="@+id/medya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diger" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear23"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/kameralat"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/geri"
+            android:layout_width="97dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            />
+
+        <Button
+            android:id="@+id/onKapi"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/geri"
+            android:background="@android:color/transparent"
+    />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

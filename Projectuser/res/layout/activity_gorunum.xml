@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/koyualt"
+    tools:context="com.example.projectuser.Tarihvesaat$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/anaisim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text="GÖRÜNÜM AYARLARI"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/contentText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anaisim"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Ekran Parlaklığı"
+        android:textColor="#000000" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anaisim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/contentText3"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/contentText31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Ekran Zamanaşımı"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/contentText31"
+        android:entries="@array/zaman_asimi"
+        android:prompt="@string/zaman_asimiprompt" />
+
+    <TextView
+        android:id="@+id/contentText32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText31"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Yazı Tipi"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText31"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/contentText32"
+        android:entries="@array/yazi_tipi"
+        android:prompt="@string/yazi_tipiprompt" />
+
+    <TextView
+        android:id="@+id/contentText33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText32"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Tema Renk Seçimi"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText32"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/contentText33"
+        android:entries="@array/tema_renk"
+        android:prompt="@string/tema_renkprompt" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/kaydet" />
+
+    <Button
+        android:id="@+id/vazgec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/kaydet"
+        android:background="@drawable/vazgec"
+        android:onClick="VazgecButton" />
+
+</RelativeLayout>

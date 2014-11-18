@@ -93,7 +93,8 @@
                         android:id="@+id/ayarlar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/custom_buttonaya" />
+                        android:background="@drawable/custom_buttonaya" 
+                        android:onClick="openAyarlar"/>
 
                     <Button
                         android:id="@+id/alarm"

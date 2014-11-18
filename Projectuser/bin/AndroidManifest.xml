@@ -15,7 +15,7 @@
         android:screenOrientation="landscape"
         android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         <activity
-            android:name="com.example.projectuser.SplashScreen"
+            android:name=".SplashScreen"
             android:icon="@drawable/ic_launcher"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
@@ -27,44 +27,69 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.projectuser.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.Kapi"
+            android:name=".Kapi"
             android:label="@string/title_activity_kapi"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.Kamera"
+            android:name=".Kamera"
             android:label="@string/title_activity_kamera"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.Alarm"
+            android:name=".Alarm"
             android:label="@string/title_activity_alarm"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.Gorusme"
+            android:name=".Gorusme"
             android:label="@string/title_activity_gorusme"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.OnKapiKamera"
+            android:name=".OnKapiKamera"
             android:label="@string/title_activity_on_kapi_kamera"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.Yardim"
+            android:name=".Yardim"
             android:label="@string/title_activity_yardim"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.example.projectuser.DetailActivity"
+            android:name=".DetailActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".Ayarlar"
+            android:label="@string/title_activity_ayarlar" >
+        </activity>
+        <activity
+            android:name=".Deneme"
+            android:label="@string/title_activity_ayarlar" >
+        </activity>
+        <activity
+            android:name=".Gorunum"
+            android:label="@string/title_activity_gorunum" >
+        </activity>
+        <activity
+            android:name=".Ses"
+            android:label="@string/title_activity_ses" >
+        </activity>
+        <activity
+            android:name=".Tarihvesaat"
+            android:label="@string/title_activity_tarihvesaat"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".TarihAyar"
+            android:label="@string/title_activity_tarih_ayar" >
         </activity>
     </application>
 
