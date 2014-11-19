@@ -61,4 +61,6 @@
         <item>Marimba </item>
     </string-array>
 
+    <string name="title_activity_gorusme_gelen_aramalar">GorusmeGelenAramalar</string>
+
 </resources>

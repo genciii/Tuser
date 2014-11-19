@@ -1,64 +1,262 @@
 package com.example.projectuser;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import net.simonvt.menudrawer.MenuDrawer;
+import net.simonvt.menudrawer.Position;
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.TextView;
 
-public class Gorusme extends Activity {
+public class Gorusme extends Activity implements MenuAdapter.MenuListener {
+
+	private static final String STATE_ACTIVE_POSITION = "net.simonvt.menudrawer.samples.LeftDrawerSample.activePosition";
+	private static final String STATE_CONTENT_TEXT = "net.simonvt.menudrawer.samples.LeftDrawerSample.contentText";
+
+	private MenuDrawer mMenuDrawer;
+
+	private MenuAdapter mAdapter;
+	private ListView mList;
+
+	private int mActivePosition = -1;
+	private String mContentText;
+	private TextView mContentTextView;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_gorusme);
+	protected void onCreate(Bundle inState) {
+		super.onCreate(inState);
 
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
+		if (inState != null) {
+			mActivePosition = inState.getInt(STATE_ACTIVE_POSITION);
+			mContentText = inState.getString(STATE_CONTENT_TEXT);
+		}
+
+		mMenuDrawer = MenuDrawer.attach(this, MenuDrawer.Type.STATIC,
+				Position.START, MenuDrawer.MENU_DRAG_CONTENT);
+		mMenuDrawer.setContentView(R.layout.activity_gorusme);
+		mMenuDrawer.setAllowIndicatorAnimation(true);
+
+		List<Object> items = new ArrayList<Object>();
+		items.add(new Category("GÖRÜÞME"));
+		items.add(new Item("Son Arananlar"));
+		items.add(new Item("Gelen Aramalar"));
+		items.add(new Item("Cevapsýz Aramalar"));
+		items.add(new Item("Telefon Rehberim"));
+		items.add(new Item("Sýk Kullanýlanlar"));
+		items.add(new Item("Aile"));
+		items.add(new Item("Ýþ"));
+		items.add(new Item("Komþu"));
+
+		mList = new ListView(this);
+		mAdapter = new MenuAdapter(this, items);
+		mAdapter.setListener(this);
+		mAdapter.setActivePosition(mActivePosition);
+		mList.setAdapter(mAdapter);
+		mList.setOnItemClickListener(mItemClickListener);
+
+		mMenuDrawer.setMenuView(mList);
+
+	}
+
+	private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position,
+				long id) {
+			selectItem(position);
+		}
+	};
+
+	private void selectItem(int position) {
+
+		// update the main content by replacing fragments
+
+		Fragment fragment = null;
+
+		switch (position) {
+		case 1:
+			fragment = new GorusmeSonArananlar();
+			break;
+		case 2:
+			fragment = new GorusmeGelenAramalar();
+
+			break;
+		case 3:
+			fragment = new GorusmeCevapsizAramalar();
+			break;
+
+		case 4:
+			fragment = new GorusmeTelefonRehberim();
+			break;
+
+		case 5:
+			fragment = new GorusmeSikKullanilanlar();
+			break;
+		case 6:
+			fragment = new GorusmeAile();
+			break;
+		case 7:
+			fragment = new GorusmeIs();
+			break;
+		case 8:
+			fragment = new GorusmeKomsu();
+			break;
+		default:
+			break;
+		}
+
+		if (fragment != null) {
+			FragmentManager fragmentManager = getFragmentManager();
+			fragmentManager.beginTransaction()
+					.replace(R.id.content_frame, fragment).commit();
+
+			// update selected item and title, then close the drawer
+			mList.setItemChecked(position, true);
+			mList.setSelection(position);
+
+		} else {
+			// error in creating fragment
+			Log.e("Ayarlar", "Error in creating fragment");
 		}
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.gorusme, menu);
-		return true;
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putInt(STATE_ACTIVE_POSITION, mActivePosition);
+		outState.putString(STATE_CONTENT_TEXT, mContentText);
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+	public void onActiveViewChanged(View v) {
+		mMenuDrawer.setActiveView(v, mActivePosition);
 	}
 
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
+	public class GorusmeSonArananlar extends Fragment {
 
-		public PlaceholderFragment() {
+		public GorusmeSonArananlar() {
 		}
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_gorusme,
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
 					container, false);
+
 			return rootView;
 		}
+
+	}
+
+	public class GorusmeCevapsizAramalar extends Fragment {
+
+		public GorusmeCevapsizAramalar() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
+					container, false);
+
+			return rootView;
+		}
+
+	}
+
+	public class GorusmeTelefonRehberim extends Fragment {
+
+		public GorusmeTelefonRehberim() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
+					container, false);
+
+			return rootView;
+		}
+
+	}
+
+	public class GorusmeSikKullanilanlar extends Fragment {
+
+		public GorusmeSikKullanilanlar() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
+					container, false);
+
+			return rootView;
+		}
+
+	}
+
+	public class GorusmeAile extends Fragment {
+
+		public GorusmeAile() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
+					container, false);
+
+			return rootView;
+		}
+
+	}
+
+	public class GorusmeIs extends Fragment {
+
+		public GorusmeIs() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
+					container, false);
+
+			return rootView;
+		}
+
+	}
+
+	public class GorusmeKomsu extends Fragment {
+
+		public GorusmeKomsu() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+
+			View rootView = inflater.inflate(R.layout.activity_gorusme,
+					container, false);
+
+			return rootView;
+		}
+
 	}
 
 }

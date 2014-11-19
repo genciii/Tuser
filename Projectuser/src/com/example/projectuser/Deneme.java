@@ -1,5 +1,12 @@
 package com.example.projectuser;
 
+/**
+ * 
+ * Bu sayfa ayarlar sayfasindaki ilk secenek olan "Alarm Kur" sekmesinin tekrar cagirilmasi durumda
+ * devreye girmek uzere tasarlanmistir. "Alarm Kur" sekmesinin orginal activity'si Ayarlar.java dir.
+ * 
+ */
+
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;

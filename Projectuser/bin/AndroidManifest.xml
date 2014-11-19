@@ -91,6 +91,10 @@
             android:name=".TarihAyar"
             android:label="@string/title_activity_tarih_ayar" >
         </activity>
+        <activity
+            android:name=".GorusmeGelenAramalar"
+            android:label="@string/title_activity_gorusme_gelen_aramalar" >
+        </activity>
     </application>
 
 </manifest>
