@@ -101,13 +101,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/custom_buttonalar"
-                        android:onClick="openAlarm" />
+                         />
 
                     <Button
                         android:id="@+id/medya"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/custom_buttonmedy" />
+                        android:background="@drawable/custom_buttonmedy"
+                        android:onClick="MedyaClick" />
                 </LinearLayout>
 
                 <LinearLayout

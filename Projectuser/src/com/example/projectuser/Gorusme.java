@@ -2,7 +2,6 @@ package com.example.projectuser;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import net.simonvt.menudrawer.MenuDrawer;
 import net.simonvt.menudrawer.Position;
 import android.app.Activity;
@@ -15,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class Gorusme extends Activity implements MenuAdapter.MenuListener {
 
@@ -29,7 +27,6 @@ public class Gorusme extends Activity implements MenuAdapter.MenuListener {
 
 	private int mActivePosition = -1;
 	private String mContentText;
-	private TextView mContentTextView;
 
 	@Override
 	protected void onCreate(Bundle inState) {
@@ -65,6 +62,10 @@ public class Gorusme extends Activity implements MenuAdapter.MenuListener {
 
 		mMenuDrawer.setMenuView(mList);
 
+	}
+
+	public void VazgecButton(View view) {
+		finish();
 	}
 
 	private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
@@ -160,23 +161,6 @@ public class Gorusme extends Activity implements MenuAdapter.MenuListener {
 	public class GorusmeCevapsizAramalar extends Fragment {
 
 		public GorusmeCevapsizAramalar() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-
-			View rootView = inflater.inflate(R.layout.activity_gorusme,
-					container, false);
-
-			return rootView;
-		}
-
-	}
-
-	public class GorusmeTelefonRehberim extends Fragment {
-
-		public GorusmeTelefonRehberim() {
 		}
 
 		@Override

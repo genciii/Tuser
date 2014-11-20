@@ -2,6 +2,7 @@ package com.example.projectuser;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -41,18 +42,18 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 
-	public void openAlarm(View view) {
-		Intent intent = new Intent(this, Alarm.class);
-		startActivity(intent);
-	}
-	
 	public void openYardim(View view) {
 		Intent intent = new Intent(this, Yardim.class);
 		startActivity(intent);
 	}
-	
+
 	public void openAyarlar(View view) {
 		Intent intent = new Intent(this, Ayarlar.class);
+		startActivity(intent);
+	}
+
+	public void MedyaClick(View view) {
+		Intent intent = new Intent(this, Medya.class);
 		startActivity(intent);
 	}
 

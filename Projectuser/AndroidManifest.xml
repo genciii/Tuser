@@ -89,11 +89,43 @@
         </activity>
         <activity
             android:name=".TarihAyar"
-            android:label="@string/title_activity_tarih_ayar" >
+            android:label="@string/title_activity_tarih_ayar"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
         <activity
             android:name=".GorusmeGelenAramalar"
-            android:label="@string/title_activity_gorusme_gelen_aramalar" >
+            android:label="@string/title_activity_gorusme_gelen_aramalar"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".GorusmeArama"
+            android:label="@string/title_activity_gorusme_arama"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".GorusmeTelefonRehberim"
+            android:label="@string/title_activity_gorusme_telefon_rehberim"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".AlarmDuzenle"
+            android:label="@string/title_activity_alarm_duzenle"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".GorusmeMesajYaz"
+            android:label="@string/title_activity_gorusme_mesaj_yaz"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".Medya"
+            android:label="@string/title_activity_gorusme_mesaj_yaz"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+           <activity
+            android:name=".MedyaIcerik"
+            android:label="@string/title_activity_gorusme_mesaj_yaz"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         </activity>
     </application>
 

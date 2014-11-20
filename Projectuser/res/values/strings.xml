@@ -62,5 +62,9 @@
     </string-array>
 
     <string name="title_activity_gorusme_gelen_aramalar">GorusmeGelenAramalar</string>
+    <string name="title_activity_gorusme_arama">GorusmeArama</string>
+    <string name="title_activity_gorusme_telefon_rehberim">GorusmeTelefonRehberim</string>
+    <string name="title_activity_alarm_duzenle">AlarmDuzenle</string>
+    <string name="title_activity_gorusme_mesaj_yaz">GorusmeMesajYaz</string>
 
 </resources>

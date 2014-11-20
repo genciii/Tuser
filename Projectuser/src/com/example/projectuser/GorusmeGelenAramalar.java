@@ -5,11 +5,14 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -229,10 +232,10 @@ public class GorusmeGelenAramalar extends Fragment {
 
 				@Override
 				public void onClick(View v) {
-					/*
-					 * 
-					 * Bu ara buttonu icin
-					 */
+
+					Intent myIntent = new Intent(v.getContext(),
+							GorusmeArama.class);
+					startActivity(myIntent);
 
 				}
 			});
@@ -251,12 +254,21 @@ public class GorusmeGelenAramalar extends Fragment {
 
 			holder.btn3.setOnClickListener(new View.OnClickListener() {
 
+				Fragment fragment = null;
+
 				@Override
 				public void onClick(View v) {
-					/*
-					 * 
-					 * MesajYaz butonu
-					 */
+					fragment = new GorusmeMesajYaz();
+
+					if (fragment != null) {
+						FragmentManager fragmentManager = getFragmentManager();
+						fragmentManager.beginTransaction()
+								.replace(R.id.content_mesajyaz, fragment).commit();
+
+					} else {
+						// error in creating fragment
+						Log.e("Ayarlar", "Error in creating fragment");
+					}
 
 				}
 			});
@@ -265,7 +277,7 @@ public class GorusmeGelenAramalar extends Fragment {
 
 				@Override
 				public void onClick(View v) {
-					
+
 					/*
 					 * 
 					 * Satira tiklandiginda
